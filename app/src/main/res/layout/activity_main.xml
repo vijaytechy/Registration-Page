@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbackground"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="welcome
+                               signup here👇"
+         android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+         android:paddingLeft="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/blue"
+            android:id="@+id/name"
+            android:textStyle="normal"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/blue"
+            android:hint="email_id"
+
+            android:id="@+id/eid"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/blue"
+            android:hint="user_id"
+
+            android:id="@+id/uid"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/blue"
+            android:hint="password"
+            android:id="@+id/pass"/>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="SIGNUP"
+     android:id="@+id/btn"
+        />
+
+    <TextView
+        android:id="@+id/tvs"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="if already register click on ,signIn"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
